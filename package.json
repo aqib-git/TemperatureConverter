@@ -1,0 +1,18 @@
+{
+  "name": "temperature-converter",
+  "version": "1.0.0",
+  "description": "A Temperature converter built with Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+  ],
+  "author": "Aqib Rashid",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}

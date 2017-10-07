@@ -1,0 +1,47 @@
+body {
+	background-color: crimson;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	color: white;
+	font-weight: 700; 
+}
+
+input {
+	height: 35px;
+	border: 2px solid white;
+	font-size: 30px;
+}
+
+label {
+	display: block;
+	color: white;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.app-title {
+	text-align: center;
+}
+
+#converter-form {
+	max-width: 500px;
+	margin: 0px auto;
+}
+#converter-form > div {
+	width: 45%;
+	float: left;
+	text-align: center;
+}
+#converter-form > div:nth-of-type(2){
+	width: 10%;
+    line-height: 113px;
+    color: white;
+    font-size: 30px;
+}
+#converter-form > div input{
+	width: 90%;
+	margin: 0% 5%;
+}
