@@ -1,3 +1,3 @@
-# Faherenheit <=> Celsius Converter in Electron
+# Faherenheit <=> Celsius Converter App in Electron
 
 ![Screenshot](screenshot.jpg)
