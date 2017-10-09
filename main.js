@@ -15,7 +15,7 @@ let messageWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 300})
+  mainWindow = new BrowserWindow({width: 800, height: 300, show: false})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -23,6 +23,8 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   }))
+
+  mainWindow.on('ready-to-show', () => mainWindow.show())
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

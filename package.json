@@ -4,7 +4,9 @@
   "description": "A Temperature converter built with Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -14,6 +16,13 @@
   "author": "Aqib Rashid",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-builder": "^19.34.2"
+  },
+  "build": {
+    "appId": "12345",
+    "mac": {
+      "category": "aqib.tc.converter.desk"
+    }
   }
 }
