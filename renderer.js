@@ -8,7 +8,9 @@ let fahrenheitInput = document.getElementById('fahrenheit-input')
 document.getElementById('celsius-input').onchange = function() {
 	let value = parseFloat(this.value)
 	if(isNaN(value)) {
-		this.value = value = 0
+		this.value = ''
+		fahrenheitInput.value = ''
+		return
 	}
 	fahrenheitInput.value = Number((value * 1.8 + 32).toFixed(2))
 }
@@ -16,7 +18,9 @@ document.getElementById('celsius-input').onchange = function() {
 document.getElementById('fahrenheit-input').onchange = function() {
 	let value = parseFloat(this.value)
 	if(isNaN(value)) {
-		this.value = value = 0
+		this.value = ''
+		celsiusInput.value = ''
+		return
 	}
-	celsiusInput.value = Number((( value - 32) * 0.56).toFixed(2))
+	celsiusInput.value = Number((( value - 32) / 1.8).toFixed(2))
 }
